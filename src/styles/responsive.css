@@ -1,0 +1,241 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* Login component */
+    .login > a {
+        font-size: 12px;
+        padding: 15px;
+    }
+
+    /* Sidebar component */
+    .sidebar {
+        height: 60px !important;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #282828 !important;
+        border-top: 1px solid black;
+        padding: 0 !important;
+        z-index: 1;
+    }
+
+    .sidebar__logo,
+    .sidebar__title {
+        display: none;
+    }
+
+    .sidebar > hr ~ div {
+        display: none;
+    }
+
+    .sidebar > br, hr {
+        display: none;
+    }
+
+    /* SidebarOption component */
+    .sidebarOption {
+        flex-direction: column;
+    }
+
+    .sidebarOption > h4 {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    /* Body component */
+    .body {
+        flex: 1 !important;
+        padding: 0px !important;
+    }
+    
+    .body__infoText > strong {
+        font-size: 14px !important;
+    }
+
+    .body__infoText > h2 {
+        font-size: 28px !important;
+    }
+
+    .body__infoText > p {
+        font-size: 12px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* number of lines to show */
+        -webkit-box-orient: vertical;
+    }
+
+    .body__info > img {
+        height: 160px !important;
+        margin: 0 10px 0 0 !important;
+    }
+
+    .body__icons > svg {
+        font-size: 25px !important;
+    }
+
+    .body__icons > .body__shuffle {
+        font-size: 50px !important;
+        margin-left: 36px;
+    }
+
+    /* SongRow component */
+    .body__songs {
+        margin-right: 0 !important;
+    }
+
+    .songRow__album {
+        align-self: flex-start;
+        padding-top: 4px;
+    }
+
+    /* Header component */
+    .header {
+        padding: 18px 15px 20px 4px;
+        margin: 0 !important;
+    }
+
+    .header__left {
+        background-color: transparent !important;
+        flex: 0.7 !important;
+    }
+
+    .header__left > h4 {
+        display: block !important;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .header__left > input,
+    .header__left > svg {
+        display: none;
+    }
+
+    .header__right > h4 {
+        display: none;
+    }
+
+    /* Footer component */
+    .footer {
+        bottom: 60px !important;
+        border-bottom: 1px black solid;
+        padding: 0 !important;
+        width: 100% !important;
+        height: 60px !important;
+    }
+
+    .footer__left {
+        flex: 0.9 !important;
+    }
+
+    .footer__center {
+        /* padding: 30px 10px 30px 30px !important; */
+        flex: 0.1 !important;
+        padding: 0 !important;
+        padding-left: 5px !important;
+        padding-right: 10px !important;
+    }
+
+    .footer__center > .footer__green,
+    .footer__center > :nth-child(2),
+    .footer__center > :nth-child(4) {
+        display: none !important;
+    }
+
+    .footer__songInfo > h4,
+    .footer__songInfo > p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1; /* number of lines to show */
+        -webkit-box-orient: vertical;
+    }
+
+    .footer__albumLogo {
+        height: 40px !important;
+        width: 40px !important;
+        padding-left: 10px;
+    }
+
+    .footer__icon {
+        font-size: 25px !important;
+    }
+
+    .footer__right {
+        display: none !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px ) {
+    /* Sidebar component */
+
+    .sidebar {
+        overflow-y: overlay;
+    }
+
+    .sidebar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Body component */
+    .body__info > img {
+        height: 180px !important;
+    }
+
+    .body__infoText > h2 {
+        font-size: 28px !important;
+    }
+
+    .body__infoText > p {
+        font-size: 12px !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5; /* number of lines to show */
+        -webkit-box-orient: vertical;
+    }
+
+    /* Footer component */
+    .footer__center {
+        padding: 0 !important;
+        margin-left: 15px !important;
+        margin-right: 35px !important;
+    }
+
+    .footer__right > .MuiSlider-root,
+    .footer__right > .MuiSlider-root > .MuiSlider-track {
+        width: 80px !important;
+        margin-right: 35px !important;
+    }
+
+    .footer__songInfo > h4 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* number of lines to show */
+        -webkit-box-orient: vertical;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Footer component */
+    .footer__right > .MuiSlider-root,
+    .footer__right > .MuiSlider-root > .MuiSlider-track {
+        width: 100px !important;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
